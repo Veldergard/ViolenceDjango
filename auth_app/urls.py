@@ -2,7 +2,7 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns, static  # Static files serving
 from django.urls import path
 
-from auth import views
+from auth_app import views
 
 urlpatterns = [
     path("", views.index, name="index"),
