@@ -3,9 +3,9 @@
   <component name="FacetManager">
     <facet type="django" name="Django">
       <configuration>
-        <option name="rootFolder" value="$MODULE_DIR$/../ViolenceProject" />
+        <option name="rootFolder" value="$MODULE_DIR$" />
         <option name="settingsModule" value="violence_detection/settings.py" />
-        <option name="manageScript" value="$MODULE_DIR$/../ViolenceProject/manage.py" />
+        <option name="manageScript" value="$MODULE_DIR$/manage.py" />
         <option name="environment" value="&lt;map/&gt;" />
         <option name="doNotUseTestRunner" value="false" />
         <option name="trackFilePattern" value="migrations" />
@@ -16,7 +16,7 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.13 (ViolenceProject)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.11 virtualenv at ~/PycharmProjects/ViolenceDjango/venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
@@ -27,8 +27,8 @@
     <option name="TEMPLATE_CONFIGURATION" value="Django" />
     <option name="TEMPLATE_FOLDERS">
       <list>
-        <option value="$MODULE_DIR$/../ViolenceProject/auth_app/templates" />
-        <option value="$MODULE_DIR$/../ViolenceProject/video_app/templates" />
+        <option value="$MODULE_DIR$/auth_app/templates" />
+        <option value="$MODULE_DIR$/video_app/templates" />
       </list>
     </option>
   </component>
