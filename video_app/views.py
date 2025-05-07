@@ -9,7 +9,7 @@ CLASS_LABELS = {
     1: "Агрессия обнаружена"
 }
 
-model = load_model('path/to/your_model.keras')
+# model = load_model('../model_train/models/violence_v2_v1.keras')
 
 
 def video_feed(request):
@@ -22,23 +22,23 @@ def video_page(request):
 
 def generate_frames(stream_url):
     cap = cv2.VideoCapture(stream_url)
-    while True:
-        ret, frame = cap.read()
-        if not ret:
-            break
-
-        # Подготовка кадра
-        input_frame = cv2.resize(frame, (224, 224))
-        array = img_to_array(input_frame)
-        array = np.expand_dims(array, axis=0)
-        array = preprocess_input(array)
-
-        # Предсказание
-        preds = model.predict(array)
-        # Можно декодировать результат, но здесь — просто для демонстрации
-
-        # Отображение кадра
-        _, buffer = cv2.imencode('.jpg', frame)
-        frame_bytes = buffer.tobytes()
-        yield (b'--frame\r\n'
-               b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')
+    # while True:
+    #     ret, frame = cap.read()
+    #     if not ret:
+    #         break
+    #
+    #     # Подготовка кадра
+    #     input_frame = cv2.resize(frame, (224, 224))
+    #     array = img_to_array(input_frame)
+    #     array = np.expand_dims(array, axis=0)
+    #     array = preprocess_input(array)
+    #
+    #     # Предсказание
+    #     preds = model.predict(array)
+    #     # Можно декодировать результат, но здесь — просто для демонстрации
+    #
+    #     # Отображение кадра
+    #     _, buffer = cv2.imencode('.jpg', frame)
+    #     frame_bytes = buffer.tobytes()
+    #     yield (b'--frame\r\n'
+    #            b'Content-Type: image/jpeg\r\n\r\n' + frame_bytes + b'\r\n')

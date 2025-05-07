@@ -36,7 +36,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'auth_app.apps.AuthAppConfig',
-    'polls_app.apps.PollsAppConfig',
     'video_app.apps.VideoAppConfig',
 ]
 

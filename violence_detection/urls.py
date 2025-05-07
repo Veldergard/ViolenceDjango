@@ -22,7 +22,6 @@ from django.urls import path  # URL routing
 
 urlpatterns = [
     path('auth/', include('auth_app.urls')),
-    path('polls/', include('polls_app.urls')),
     path('video/', include('video_app.urls')),
     path('admin/', admin.site.urls),
 ]
