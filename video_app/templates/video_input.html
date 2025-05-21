@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Video URL</title>
+</head>
+<body>
+    <h1>Enter Video URL</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="video_url" placeholder="https://example.com/video.mp4" required>
+        <button type="submit">Play Video</button>
+    </form>
+</body>
+</html>
